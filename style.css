@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    background-color: #091512;
+    background-image: url(./stacked-peaks-haikei.png);
+    background-size:200vh;
+}
+
+#navbar {
+    color: rgb(219, 221, 176);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: auto;
+    height: 8vh;
+    justify-content: center;
+}
+
+#navbar p{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.section{
+    overflow-wrap: hidden;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 92vh;
+    flex-wrap: nowrap;
+}
+
+.area{
+    background-color: #9ad4c28b;
+    width: 60%;
+    height: 98%;
+    border-radius: 30px;
+    padding: 20px 0px 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.get{
+    background-color: #3b7878cd;
+    width: 30%;
+    height: 30%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.get input{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    padding: 0px 10px;
+}
+
+.get button{
+    width: 90;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    background-color: #9ad4c28b;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+
+.show{
+    background-color: #9ad4c28b;
+    width: 60%;
+    height: 90%;
+    border-radius: 30px;
+    padding: 20px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    gap: 10px;
+    transition: 3.2s ease-in-out all;
+}
+
+.show::-webkit-scrollbar {
+    width: 12px;
+    background-color: #aeb7b5;
+    border-radius: 10px;
+}
+
+.show::-webkit-scrollbar-thumb {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+}
+
+.show::-webkit-scrollbar-track {
+    background-color: #00000064;
+    border-radius: 10px;
+}
+
+
+.card{
+    background-color: #d66f4c;
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    transition: 3.2s ease-in-out all;
+}
+
+
+.number{
+    font-size: 50px;
+}
+
+.td{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    gap: 10px;
+}
+
+#time::before{
+    content: "Time: ";
+}
+
+
+#title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    text-align: flex-start;
+}
+
+#info{
+    font-size: 1.rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px;
+    text-align: flex-start;
+}
+
+#list{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.card:hover {
+    background-color: #04389ec7;
+    transform: scale(0.85);
+    box-shadow: 0px 0px 10px 5px #00000064;
+    cursor: pointer;
+}
+
+.card:active {
+    background-color: #04389ec7;
+    transform: scale(0.8);
+    box-shadow: 0px 0px 10px 5px #00000064;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
