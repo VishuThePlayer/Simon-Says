@@ -147,7 +147,15 @@ body {
       height: auto;
     }
     
-  
+    
+    #Title {
+        color: #5563ce;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-shadow: #6d6e6f4c 0px 10px 10px;
+        text-align: center;
+    }
+
     .color {
         width: 150px;
         height: 150px;
