@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #153448;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#Title {
+    color: #5563ce;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-shadow: #6d6e6f4c 0px 10px 10px;
+    text-align: center;
+}
+
+.start{
+    font-size: 70px;
+    color: #DFD0B8;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    pointer-events: stroke;
+    font-weight: 700;
+    text-shadow: #6d6e6f4c 0px 10px 10px;
+    animation: stranClick 1.5s ease-in-out 0s 1 normal none;
+}
+@keyframes stranClick {
+    0% {
+        transform: perspective(1px) rotateX(90deg);
+    }
+    20% {
+        transform: perspective(60px) rotateX(90deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.start:hover {
+    color: #3C5B6F;
+    animation: stran 1s ease infinite;
+}
+
+@keyframes stran {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+.color-groups {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 441px;
+    border: 5px solid #948979;
+    border-radius: 200px; 
+    transition: 1s ease-in-out;
+    animation: stranClick 1.5s ease-in-out 0s 1 normal none;
+  }
+  
+
+  .color-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px; 
+  }
+  
+  /* Styling for each color */
+  .color {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    opacity: 0.5;
+  }
+
+.color:hover {
+    opacity: 1; /* Reset hover opacity during blinking */
+}
+
+
+
+  
+  /* Define color styles */
+  #green {
+    background-color: #2ecc71; 
+    border-radius: 900px 90px 90px 90px;   
+  }
+  
+  #red {
+    background-color: #e74c3c; 
+    border-radius: 90px 90px 90px 900px;    
+  }
+  
+  #yellow {
+    background-color: #f1c40f; 
+    border-radius: 90px 900px 90px 90px;   
+  }
+  
+  #blue {
+    background-color: #3498db; 
+    border-radius: 90px 90px 900px 90px;   
+  }
+  
+
+  
+.level {
+    display: flex;
+    flex-direction: column;
+    color: #948979;
+    text-shadow: #6d6e6f4c 0px 10px 10px;
+    gap: 30px;
+    margin-bottom: 5%;
+}
+
+.active{
+    opacity: 0.5 !important;
+}
+
+@media screen and (max-width: 600px) {
+    .color-groups {
+      width: auto;
+      height: auto;
+    }
+    
+  
+    .color {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        opacity: 0.5;
+    }
+  }
+
