@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -13,68 +13,33 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav id="navbar">
-            <p><u>To Do List</u></p>
-        </nav>
+        <h1 id="Title">Simon Says</h1>
 
-        <div class="section">
-             <div class="area">
-                <div class="get">
-                    <form action="">
-                        <label for="form">
-                            <input type="text" id="form_text" placeholder="Add a new task title">
-                            <input type="text" id="form_input" placeholder="Add a new task info">
-                            <button type="submit">Sumbit</button>
-                        </label>
-                    </form>
-                </div>
-                <div class="show">
-                    <div class="card">
-                        <div class="number">
-                            <p>1</p>
-                        </div>
-                        <div class="td">
-                            <div class="date">
-                                <p>12/12/2021</p>
-                            </div>
-                            
-                            <div class="time">
-                                <p id="time">12:00</p>
-                            </div>
-                        </div>
-                        <div class="task">
-                            <h3 id="title">Task Title</h3>
-                            <p id="info" >Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis obcaecati quia voluptate tenetur odio, consequuntur eius nulla maxime debitis quas officiis provident sint odit! Pariatur quibusdam eveniet error aliquam. ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam, minima reprehenderit eius quos distinctio temporibus nesciunt, voluptas, recusandae ullam voluptatibus aut dolorum molestias totam est delectus ab sint incidunt.</p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="number">
-                            <p>1</p>
-                        </div>
-                        <div class="td">
-                            <div class="date">
-                                <p>12/12/2021</p>
-                            </div>
-                            
-                            <div class="time">
-                                <p id="time">12:00</p>
-                            </div>
-                        </div>
-                        <div class="task">
-                            <h3 id="title">Task Title</h3>
-                            <p id="info" >Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis blanditiis obcaecati quia voluptate tenetur odio, consequuntur eius nulla maxime debitis quas officiis provident sint odit! Pariatur quibusdam eveniet error aliquam. ipsum dolor sit amet consectetur adipisicing elit. Maiores numquam, minima reprehenderit eius quos distinctio temporibus nesciunt, voluptas, recusandae ullam voluptatibus aut dolorum molestias totam est delectus ab sint incidunt.</p>
-                        </div>
-                    </div>
-             </div>
+        <div class="start">
+            <h1>Start</h1>
         </div>
+
+        <div class="level">
+        </div>
+
+        <div class="color-groups">
+            <div class="color-wrapper">
+                <div class="color  " id="green"></div>
+                <div class="color" id="red"></div>
+            </div>
+            <div class="color-wrapper">
+                <div class="color" id="yellow"></div>
+                <div class="color" id="blue"></div>
+            </div>
+        </div>
+        
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="app.js" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>
